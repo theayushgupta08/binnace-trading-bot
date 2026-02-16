@@ -8,9 +8,6 @@ __pycache__/
 dist/
 build/
 
-# Logs
-logs/
-
 # IDE
 .vscode/
 .idea/

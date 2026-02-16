@@ -1,0 +1,44 @@
+2026-02-16 22:04:08 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:04:09 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:04:09 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:05:20 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:05:21 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:05:21 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:06:01 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:06:03 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:06:03 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:06:03 | INFO     | bot.orders | Placing BUY MARKET order: symbol=BTCUSDT qty=10
+2026-02-16 22:06:03 | DEBUG    | bot.client | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '10', 'newOrderRespType': 'RESULT', 'timestamp': 1771259763028, 'signature': '77439f4ba07830ea6de0033cdc9ca3cac06602c5dbf9e0a9d0849c0177608130'}
+2026-02-16 22:06:03 | DEBUG    | bot.client | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order status=400 body={"code":-2019,"msg":"Margin is insufficient."}
+2026-02-16 22:06:03 | ERROR    | bot | API error placing order: [HTTP 400] Binance error -2019: Margin is insufficient.
+2026-02-16 22:06:52 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:06:54 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:06:54 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:06:54 | INFO     | bot.orders | Placing BUY MARKET order: symbol=BTCUSDT qty=0.1
+2026-02-16 22:06:54 | DEBUG    | bot.client | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.1', 'newOrderRespType': 'RESULT', 'timestamp': 1771259814696, 'signature': '0e88608c402374bb7f764b1ffbd2db9010edac8ba8aa6c8d5f6ba466f95ed28e'}
+2026-02-16 22:06:54 | DEBUG    | bot.client | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order status=200 body={"orderId":12318095169,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"xO8vYrDKiwglRH8dvlj5wC","price":"0.00","avgPrice":"67661.55800","origQty":"0.100","executedQty":"0.100","cumQty":"0.100","cumQuote":"6766.15580","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1771259814795}
+2026-02-16 22:06:54 | INFO     | bot.orders | Order response: orderId=12318095169 status=FILLED executedQty=0.100 avgPrice=67661.55800
+2026-02-16 22:07:33 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:07:35 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:07:35 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:07:35 | INFO     | bot.orders | Placing SELL LIMIT order: symbol=BTCUSDT qty=0.1 price=10
+2026-02-16 22:07:35 | DEBUG    | bot.client | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.1', 'newOrderRespType': 'RESULT', 'price': '10', 'timeInForce': 'GTC', 'timestamp': 1771259855431, 'signature': '1780a4fef2d7c256140a7aa610e041fccbb6c2730e8771f549cdaccca56997d3'}
+2026-02-16 22:07:35 | DEBUG    | bot.client | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order status=400 body={"code":-4013,"msg":"Price less than min price."}
+2026-02-16 22:07:35 | ERROR    | bot | API error placing order: [HTTP 400] Binance error -4013: Price less than min price.
+2026-02-16 22:12:27 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:12:29 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:12:29 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:12:29 | INFO     | bot.orders | Placing BUY MARKET order: symbol=BTCUSDT qty=0.1
+2026-02-16 22:12:29 | DEBUG    | bot.client | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.1', 'newOrderRespType': 'RESULT', 'timestamp': 1771260149669, 'signature': 'f1662b9248aca679d253590a42d4c03e47bd5eb88c8fb0b4b144797d4d225cd1'}
+2026-02-16 22:12:29 | DEBUG    | bot.client | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order status=200 body={"orderId":12318197377,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"TpIcTK5CShCPBPeKNMSvpP","price":"0.00","avgPrice":"67734.91900","origQty":"0.100","executedQty":"0.100","cumQty":"0.100","cumQuote":"6773.49190","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1771260149742}
+2026-02-16 22:12:29 | INFO     | bot.orders | Order response: orderId=12318197377 status=FILLED executedQty=0.100 avgPrice=67734.91900
+2026-02-16 22:16:36 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:16:37 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:16:37 | INFO     | bot.client | Ping successful: {}
+2026-02-16 22:16:47 | INFO     | bot.orders | Placing BUY MARKET order: symbol=BTCUSDT qty=0.1
+2026-02-16 22:16:47 | DEBUG    | bot.client | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.1', 'newOrderRespType': 'RESULT', 'timestamp': 1771260407145, 'signature': 'b273a897f7414172150f912738202671f268d168c6d4434ed5de319cbb0ac491'}
+2026-02-16 22:16:47 | DEBUG    | bot.client | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order status=200 body={"orderId":12318276113,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"UQRMlI54rSrPskBxT3HQLw","price":"0.00","avgPrice":"67846.20000","origQty":"0.100","executedQty":"0.100","cumQty":"0.100","cumQuote":"6784.62000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1771260407263}
+2026-02-16 22:16:47 | INFO     | bot.orders | Order response: orderId=12318276113 status=FILLED executedQty=0.100 avgPrice=67846.20000
+2026-02-16 22:16:59 | DEBUG    | bot.client | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-02-16 22:17:01 | DEBUG    | bot.client | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/ping status=200 body={}
+2026-02-16 22:17:01 | INFO     | bot.client | Ping successful: {}
