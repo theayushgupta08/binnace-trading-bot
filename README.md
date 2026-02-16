@@ -1,10 +1,11 @@
 # Binance Futures Testnet Trading Bot
 
-A clean, reusable Python CLI application for placing **MARKET** and **LIMIT** orders on the [Binance Futures Testnet (USDT-M)](https://testnet.binancefuture.com/).
+A clean, reusable Python application for placing **MARKET** and **LIMIT** orders on the [Binance Futures Testnet (USDT-M)](https://testnet.binancefuture.com/).
 
 ## Features
 
 - Place **MARKET** and **LIMIT** orders (BUY / SELL)
+- **Tkinter GUI** — dark-themed desktop interface with live connection status, order form, and scrollable order log
 - Two CLI modes: **direct flags** and **interactive prompt wizard**
 - Rich, colour-coded terminal output (powered by [Rich](https://github.com/Textualize/rich))
 - HMAC-SHA256 request signing
@@ -23,6 +24,7 @@ trading_bot/
 │   ├── validators.py        # Input validation & OrderParams dataclass
 │   └── logging_config.py    # Dual file + console logging setup
 ├── cli.py                   # CLI entry point (argparse + Rich)
+├── gui.py                   # Tkinter GUI entry point
 ├── .env.example             # Template for API credentials
 ├── .gitignore
 ├── requirements.txt
@@ -62,7 +64,15 @@ Generate them at <https://testnet.binancefuture.com/>.
 python cli.py ping
 ```
 
-### 4. Place an order
+### 4. Launch the GUI (optional)
+
+```bash
+python gui.py
+```
+
+A dark-themed window opens with a live connection indicator, order form, confirmation dialog, and scrollable order log.
+
+### 5. Place an order (CLI)
 
 #### Direct mode
 
